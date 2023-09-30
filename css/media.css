@@ -86,7 +86,11 @@
         display: block;
     }
     
-    .productList button {
+    .productList button:nth-of-type(1) {
+        font-size: 20px;
+    }
+    
+    .productList button:nth-of-type(2) {
         font-size: 20px;
     }
    
