@@ -166,6 +166,140 @@ body {
 }
 
 
+.tab {
+    float: left;
+    padding: 30px;
+    margin: 85px 0 0 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f1f1f1;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tab button {
+    flex: 1;
+    margin-bottom: 5px;
+    display: block;
+    border-radius: 30px;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 22px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+.tabTitle {
+    display: block;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tabcontent {
+    flex: 1;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.productList {
+    position: relative;
+    margin: 20px 10px 20px 20px;
+    text-align: center;
+}
+
+.name {
+    font-size: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.productList img {
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 5px 10px 0 rgb(126, 126, 126);
+}
+
+.productList button:nth-of-type(1) {
+    display: none;
+    transition: opacity 0.5s;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-5%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.productList button:nth-of-type(2) {
+    display: none;
+    transition: opacity 0.5s;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    transform: translate(-13%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.productList button:hover {
+    background-color: #d5d5d5;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.productList:hover button {
+    display: block;
+}
+
+.productList:hover img {
+    opacity: 0.6;
+}
+
+.price {
+    font-size: 30px;
+    color: red;
+}
+
+
+
+
+
+
 
 
 footer {
@@ -222,93 +356,23 @@ footer a {
     text-decoration: none;
 }
 
-
-
-
-
-.tab {
-    float: left;
-    padding: 30px;
-    margin: 85px 0 0 30px;
+#myBtn {
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+    padding: 10px;
     border: none;
-    border-radius: 30px;
-    background-color: #f1f1f1;
-    width: 20%;
-    height: 300px;
-}
-
-.tab button {
-    display: block;
-    border-radius: 30px;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: center;
+    border-radius: 10px;
+    z-index: 99;
     cursor: pointer;
-    transition: 0.3s;
-    font-size: 22px;
+    background-color: rgba(156, 149, 141, 0.5);
 }
 
-.tab button:hover {
-    background-color: #ddd;
-}
-
-.tab button.active {
-    background-color: #ccc;
-    font-weight: bold;
-}
-
-.tabTitle {
-    display: block;
-    padding-top: 30px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.tabcontent {
-    flex: 1;
-    /* margin: 30px 50px; */
-}
-
-.product {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.card {
-    background-color: #c9c9c9;
-    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    margin: 20px;
-    text-align: center;
-}
-
-.card img {
-    width: 200px;
-    height: 300px;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-.price {
-    font-size: 30px;
-    color: red;
-}
-
-
-.card button {
-    cursor: pointer;
+#myBtn:hover {
+    float: right;
+    padding: 10px;
     border: none;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    width: 70%;
-    height: 50px;
-    font-size: 26px;
-}
-.card button:hover {
-background-color:#353535 ;
-color: #dfdfdf;
+    border-radius: 10px;
+    background-color: rgba(61, 61, 61, 0.5);
+    color: rgb(238, 238, 238);
 }
