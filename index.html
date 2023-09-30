@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav id="myNav">
+            <div class="home">
+                <a href=""><img src="./img/icon.png" alt="icon"></a>
+                <a href="" class="navList">首頁</a>
+            </div>
+            <div class="searchContainer">
+                <input class="search" type="text" placeholder="Search" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="memberCart">
+                <a href="" class="navList">會員</a>
+                <a class="shoppingCart" href=""></a>
+            </div>
+        </nav>
+        <div class="slidesContainer">
+            <div class="mySlide fade">
+                <img src="./img/slider.jpg">
+            </div>
+            <div class="mySlide fade">
+                <img src="./img/slider2.jpg">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </header>
+    <main class="container">
+        <div class="tab">
+            <button class="tablinks" onclick="openType(event, 'chiness')" id="defaultOpen">中文書籍</button>
+            <button class="tablinks" onclick="openType(event, 'english')">英文書籍</button>
+            <button class="tablinks" onclick="openType(event, 'child')">親子閱讀</button>
+        </div>
+        <div id="chiness" class="tabcontent">
+            <span class="tabTitle">中文書籍</span>
+            <div class="product">
+                <div class="card">
+                    <img src="./img/chiness.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+                <div class="card">
+                    <img src="./img/chiness.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+                <div class="card">
+                    <img src="./img/chiness.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+            </div>  
+            <div class="product">
+                <div class="card">
+                    <img src="./img/chiness.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+                <div class="card">
+                    <img src="./img/chiness.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+                <div class="card">
+                    <img src="./img/chiness.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+            </div>  
+            <div class="product">
+                <div class="card">
+                    <img src="./img/chiness.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+                <div class="card">
+                    <img src="./img/chiness.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+                <div class="card">
+                    <img src="./img/chiness.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+            </div>  
+        </div>
+        <div id="english" class="tabcontent">
+            <span class="tabTitle">英文書籍</span>
+            <div class="product">
+                <div class="card">
+                    <img src="./img/english.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+                <div class="card">
+                    <img src="./img/english.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+                <div class="card">
+                    <img src="./img/english.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+            </div>  
+            <div class="product">
+                <div class="card">
+                    <img src="./img/english.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+                <div class="card">
+                    <img src="./img/english.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+                <div class="card">
+                    <img src="./img/english.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+            </div>  
+            <div class="product">
+                <div class="card">
+                    <img src="./img/english.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+                <div class="card">
+                    <img src="./img/english.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+                <div class="card">
+                    <img src="./img/english.jpg" alt="">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$***</p>
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+            </div>  
+        </div>
+        <div id="child" class="tabcontent">
+            <span class="tabTitle">親子閱讀</span>
+            <div class="product">
+                <div class="card">
+                    <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+                    <h1>富爸爸，窮爸爸</h1>
+                    <p class="price">$2***</p>
+                    
+                    <button>查看商品</button>
+                    <button>加入購物車</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footerCol1">
+            <a href=""><img src="./img/icon.png" alt="icon"></a>
+            <p>© ** 版權所有</p>
+        </div>
+        <div class="footerCol2">
+            <a href="">常見問題</a>
+            <a href="">聯絡我們</a>
+            <a href="">隱私權政策</a>
+            <a href="">服務條款</a>
+        </div>
+        <div class="footerCol3">
+            <div>服務單位 : **有限公司／統一編號 12342234</div>
+            <div>客服專線 : <a href="tel:+886 (04) 2234-3234">+886 (04) 2234-3234</a></div>
+            <div>客服信箱 : <a href="mailto:aaa@gmail.com">aaa@gmail.com</a></div>
+            <div>客服時間 : 週一 ~ 週五 10:00-12:30 | 13:30-18:00(適逢國定假日暫停服務)</div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var nav = document.getElementById('myNav');
+            if (window.scrollY > 0) {
+                nav.classList.add('shrink');
+            } else {
+                nav.classList.remove('shrink');
+            }
+        });
+
+        // 輪播圖
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("mySlide");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+
+
+        function openType(evt, bookType) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(bookType).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+    </script>
+</body>
+
+</html>
