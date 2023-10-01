@@ -22,7 +22,7 @@
                 <button type="submit"><i class="fa fa-search"></i></button>
             </div>
             <div class="memberCart">
-                <a href="" class="navList">會員</a>
+                <a class="navList" onclick="login()">會員</a>
                 <a class="shoppingCart" href=""></a>
                 <span id="cartCount" class="badge">0</span>
             </div>
@@ -277,11 +277,20 @@
         </div>
 
     </main>
+    
     <div id="productNum">
         <h2>請選擇數量</h2>
         <input type="number">
         <button onclick="comfirm()">送出</button>
     </div>
+
+    <div id="login">
+        <h2>會員登入</h2>
+        <p>帳號：<input type="text"></p>
+        <p>密碼：<input type="password"></p>
+        <button onclick="loginComfirm()">送出</button>
+    </div>
+
     <footer>
         <div class="footerCol1">
             <a href=""><img src="./img/icon.png" alt="icon"></a>
@@ -394,9 +403,7 @@
 
             if (!isNaN(inputValue)) {
                 cartCountElement.textContent = inputValue;
-            } else {
-                alert("請輸入數量");
-            }
+            } 
 
             productNum.style.display = "none";
         }
@@ -411,6 +418,20 @@
         comfirmButton.addEventListener("click", function () {
             comfirm();
         });
+
+        // 會員登入
+        function login() {
+            var login = document.getElementById("login");
+            login.style.display = "flex";
+            login.style.flexDirection = "column";
+            login.style.alignContent = "center"
+        }
+        
+        function loginComfirm() {
+            var login = document.getElementById("login");
+            login.style.display = "none";
+        }
+        
 
     </script>
 </body>
