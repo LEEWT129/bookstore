@@ -101,4 +101,9 @@
         transform: translate(-8%, -50%);
     }
 
+
+    .badge {
+        right:40px;
+      }
+
 }

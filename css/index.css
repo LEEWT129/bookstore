@@ -88,12 +88,58 @@ body {
     color: #8c8c8c;
 }
 
+
+
 .memberCart {
     display: flex;
     align-items: center;
 }
 
+.badge {
+    position: relative;
+    top: -15px;
+    right: 70px;
+    padding: 3px 8px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+}
 
+#productNum {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: none; /* 初始状态下隐藏 */
+    z-index: 1000;
+    text-align: center;
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+#productNum input {
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    background-color: #ffdfdf;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#productNum button {
+    background-color: aquamarine;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
 
 .slidesContainer {
@@ -291,8 +337,9 @@ body {
 }
 
 .price {
-    font-size: 30px;
+    font-size: 28px;
     color: red;
+    margin-top: -10px;
 }
 
 
